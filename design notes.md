@@ -37,11 +37,12 @@ I giocatori sono chef di ristoranti di lusso che competono per avere gli ingredi
 - Preparare il mazzo mercato in mezzo al tavolo
 
 
+
 ## Fase 1 (Fase Mercato)
 
-- Vengono distribuite ad ogni giocatore 3 carte ricetta che vengono messe davanti a lui scoperte
+- Vengono distribuite ad ogni giocatore 5 carte ricetta, ognuno ne scarta 2 e ne tiene 3 che vengono messe davanti a lui scoperte
 - Viene girata 1 carta mercato e messa in mezzo ai giocatori. Questa carta detta quanti ingredienti ci sono per ogni tipo
-- Viene girata una carta evento che applicherà degli effetti per questo giorno
+- *(Viene girata una carta evento che applicherà degli effetti per questo giorno)*
 - Partendo dal primo giocatore, ogni giocatore mette un token su uno degli ingredienti, non si può ripetere lo stesso numero sullo stesso ingrediente.
 - Quando tutti i token sono messi, l’ultimo giocatore decide da quale ingrediente partire. 
 - In ordine di token più alto i giocatori prendono da 1 a **CI** di quegli ingredienti. In qualsiasi momento un giocatore non può avere più di **MI** ingredienti davanti a sè. Non è possibile in questa fase eliminare ingredienti per fare spazio ad altri.
@@ -50,7 +51,12 @@ I giocatori sono chef di ristoranti di lusso che competono per avere gli ingredi
 
 ## Fase 2 (Fase Cucina)
 
-- Ogni giocatore mette da parte nella sua area le ricette completate, scartando dal proprio frigo gli ingredienti usati. Inoltre vanno scartate tutte le ricette non completate tranne una scelta dal giocatore.
+- Ogni giocatore mette da parte nella sua area le ricette completate, scartando dal proprio frigo gli ingredienti usati. Inoltre vanno scartate tutte le ricette (ND: questo perché il giocatore non ha scelto le ricette, non è giusto bloccarlo dal proseguire se è stato sfigato) non completate tranne una scelta dal giocatore.
+- *Pietanza Improvvisata*: Se alla fine della Fase Cucina non hai potuto completare nessuna ricetta, puoi decidere di cucinare una Pietanza Improvvisata.
+Scegli una delle tre ricette nella tua mano e mettila coperta (a faccia in giù) nella tua area punti. Questa carta vale 1 punto alla fine della partita.
+Le altre due ricette vengono scartate normalmente.
+Le Pietanze Improvvisate non possono essere usate per completare set o obiettivi segreti.
+Puoi eseguire questa azione una sola volta per turno.
 - Tutti gli ingredienti non utilizzati vanno rimessi nella pila di ingredienti corrispondente. Il giocatore può tenere **FI** ingredienti se lo desidera tra un turno e l'altro.
 - Si ricomincia la FASE 1, questa volta il primo giocatore è quello che ha scartato meno ingredienti nella Fase 2 appena conclusa. In caso di parità il primo giocatore è quello con meno punti. In caso di parità il primo giocatore è quello con meno ricette completate. In caso di parità è il giocatore più giovane.
 - Il gioco si conclude se alla fine della FASE 2 non ci sono più carte mercato da girare. Vince il giocatore che ha + punti.
@@ -58,11 +64,11 @@ I giocatori sono chef di ristoranti di lusso che competono per avere gli ingredi
 
 ## Idee e Ragionamenti
 
-### Ingredienti sul mercato / **MI** / **CI**
+### Carte mercato
 
-il numero di ingredienti disponibili per un tipo, relazionato al costo delle ricette e ai valori di **MI** e **CI** dovrebbe avere un minimo ed un massimo (o un fisso?) in grado di creare situazioni interessanti.
+il numero di ingredienti disponibili per un tipo, relazionato al costo delle ricette e ai valori di **MI** e **CI** dovrebbe avere un minimo ed un massimo (o un fisso?) in grado di creare situazioni interessanti. Non ci dovrebbe mai essere una situazione in cui tutti possono fare tutte le ricette, nè una situazione in cui nessuno non può farne nessuna.
 
-#### Chi ha una chance di completare una ricetta per ogni categoria in base al numero di giocatori?
+#### Dato un ingrediente, riferendosi all'ordine dei giocatori, chi di questi potrà completare una ricetta di difficoltà X assumendo che prenderà solo quello che gli serve e non di più?
 
 2 giocatori:
 - ricetta 1: tutti i giocatori
@@ -85,6 +91,8 @@ Quindi se una ricetta 3 ha un ingrediente di cui ne servono 4 dello stesso tipo,
 3 giocatori: 4
 4 giocatori: 5
 
+le quantità scalano di 1 in basso scendendo di ogni livello di ricetta.
+
 ### Carte ricetta
 
 #### Punti
@@ -106,9 +114,9 @@ Quindi se una ricetta 3 ha un ingrediente di cui ne servono 4 dello stesso tipo,
     - 2/2
     - 3-3/1
 - 3 punti: 
-    - 3/2/1 
-    - 2/2/1/1
-    - 4-4/2
+    - 3/2
+    - 2/2/1/
+    - 4-4/1
 
 ### Altro
 
